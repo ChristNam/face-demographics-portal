@@ -1,0 +1,8 @@
+com\facedetect\WebController.class
+com\facedetect\Application.class
+com\facedetect\FairFaceTranslator.class
+com\facedetect\FaceStreamHandler.class
+com\facedetect\AttributeEstimationService.class
+com\facedetect\WebSocketConfig.class
+com\facedetect\DemographicResult.class
+com\facedetect\FaceDetectionService.class
