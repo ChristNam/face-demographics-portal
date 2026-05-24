@@ -22,7 +22,8 @@ async function startWebcam() {
 }
 // Websocket to backend pipeline 
 function connectToServer(){
-    socket = new WebSocket('ws://localhost:8080/stream');
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    socket = new WebSocket(`${protocol}//${window.location.host}/stream`);
 
     socket.onopen = () => {
         statusBadge.textContent = "Live AI processing Active";
